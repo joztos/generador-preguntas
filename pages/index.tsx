@@ -29,24 +29,23 @@ const Home: NextPage = () => {
   }, [generatedBios]);
 
   const prompt =
-    "Estoy creando una aplicación que genera planeaciones de clase para estudiantes. Contamos con varios niveles de grado de estudiantes, como Primero de Primaria, Segundo de Primaria.. Todos ellos tienen su propio tema para crear una planeación de clase. Por favor, crea un planeación de clase larga y perfecta de acuerdo al nivel de grado del estudiante y al tema..  grado del estudiante es " +
-    vibe +
-    " el tema es " +
-    bio +
-    `\n. Your response must be formatted using HTML Elements for easier readability, including paragraph tags, line breaks, headings and bold titles where applicable, no need to create Full HTML Page including head, title elements. Escriba el contenido anterior con los temas siguientes.    
-    1. Actividad temprana.
-    Proporcione una actividad de activacion y enfoque para los estudiantes antes de iniciar la clase.
-    2. Requisitos previos
-    Proporcione los conocimientos detallados que se requieren para aprender el tema.
-    3. Tema y Objetivos de la clase
-    4. Desarrollo del tema
-    5. Reconecta la actividad
-    Esto permite a los estudiantes reconectar su atención al tiempo de clase y prepararlos emocionalmente para el desarrollo de las actividades planificadas.
-    6. Actividades de clase
-    Las actividades deben estar preparadas y diseñadas para reforzar los nuevos conocimientos aprendidos. Se pueden desarrollar de forma individual o colectiva. Tiene que ser productiva y significativa para promover el desarrollo de habilidades de pensamiento. Recomendamos usar una plataforma educativa para esto.
-    7. Evaluación
-    Proporcione algunas preguntas de muestra.
-    `;
+  "Estoy creando una aplicación que genera una serie de preguntas de evaluación para estudiantes de diferentes grados, como Primero de Primaria, Segundo de Primaria, etc. Cada nivel tiene su propio tema para generar las preguntas. Por favor, genera una serie de preguntas de evaluación que aumenten en complejidad y profundidad de acuerdo al nivel de grado del estudiante y al tema. El grado del estudiante es " +
+  vibe +
+  " y el tema es " +
+  bio +
+  `\n. Your response must be formatted using HTML Elements for easier readability, including paragraph tags, line breaks, headings and bold titles where applicable, no need to create Full HTML Page including head, title elements. Las preguntas deben abarcar los siguientes puntos:    
+  1. Pregunta de comprensión básica.
+  Proporcione una pregunta que evalúe la comprensión básica del tema.
+  2. Pregunta de aplicación.
+  Proporcione una pregunta que evalúe la capacidad del estudiante para aplicar el conocimiento adquirido.
+  3. Pregunta de análisis.
+  Proporcione una pregunta que evalúe la capacidad del estudiante para analizar el tema en profundidad.
+  4. Pregunta de evaluación.
+  Proporcione una pregunta que evalúe la capacidad del estudiante para evaluar y tomar decisiones basadas en su conocimiento del tema.
+  5. Pregunta de creación.
+  Proporcione una pregunta que evalúe la capacidad del estudiante para crear algo nuevo basado en su comprensión del tema.
+  `;
+  
 
   const generateBio = async (e: any) => {
     e.preventDefault();
