@@ -29,7 +29,7 @@ const Home: NextPage = () => {
   }, [generatedBios]);
 
   const prompt =
-  "Estoy creando una aplicación que genera una serie de preguntas de evaluación para estudiantes de diferentes grados, como Primero de Primaria, Segundo de Primaria, etc. Cada nivel tiene su propio tema para generar las preguntas. Por favor, genera una serie de preguntas de evaluación que aumenten en complejidad y profundidad de acuerdo al nivel de grado del estudiante y al tema. El grado del estudiante es " +
+  "Estoy creando una aplicación que genera una serie de preguntas de evaluación para estudiantes de diferentes grados, como Primero de Primaria, Segundo de Primaria, etc. Cada nivel tiene su propio tema para generar las preguntas. Por favor, genera las preguntas de evaluación necesarias para poder analisar la profunidad de entendimiento del estudiante del tema.  Las preguntas que generes  aumentan progresivamente en complejidad y profundidad de acuerdo al nivel de grado del estudiante y al tema. El grado del estudiante es " +
   vibe +
   " y el tema es " +
   bio +
@@ -104,10 +104,10 @@ const Home: NextPage = () => {
           <p></p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
-          Genera tu planeación de Clase con Navi AI
+          Evalua tu conocimiento con Navi AI
         </h1>
         <p className="text-slate-500 mt-5">
-          2,118 planeaciones generadas hasta ahora.
+          1,118 evaluaciones generadas hasta ahora.
         </p>
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3">
@@ -119,7 +119,7 @@ const Home: NextPage = () => {
               className="mb-5 sm:mb-0"
             />
             <p className="text-left font-medium">
-              Escribe el tema para tu planeación de clase.{" "}
+              Escribe el tema a evaluar.{" "}
               <span className="text-slate-500"></span>
             </p>
           </div>
