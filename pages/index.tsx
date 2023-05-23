@@ -29,21 +29,26 @@ const Home: NextPage = () => {
   }, [generatedBios]);
 
   const prompt =
-  "Estoy creando una aplicación que genera una serie de preguntas de evaluación para estudiantes de diferentes grados, como Primero de Primaria, Segundo de Primaria, etc. Cada nivel tiene su propio tema para generar las preguntas. Por favor, genera las preguntas de evaluación necesarias para poder analisar la profunidad de entendimiento del estudiante del tema.  Las preguntas que generes  aumentan progresivamente en complejidad y profundidad de acuerdo al nivel de grado del estudiante y al tema. El grado del estudiante es " +
-  vibe +
-  " y el tema es " +
-  bio +
-  `\n. Your response must be formatted using HTML Elements for easier readability, including paragraph tags, line breaks, headings and bold titles where applicable, no need to create Full HTML Page including head, title elements. Las preguntas deben abarcar los siguientes puntos:    
-  1. Pregunta de comprensión básica.
-  Proporcione una pregunta que evalúe la comprensión básica del tema.
-  2. Pregunta de aplicación.
-  Proporcione una pregunta que evalúe la capacidad del estudiante para aplicar el conocimiento adquirido.
-  3. Pregunta de análisis.
-  Proporcione una pregunta que evalúe la capacidad del estudiante para analizar el tema en profundidad.
-  4. Pregunta de evaluación.
-  Proporcione una pregunta que evalúe la capacidad del estudiante para evaluar y tomar decisiones basadas en su conocimiento del tema.
-  5. Pregunta de creación.
-  Proporcione una pregunta que evalúe la capacidad del estudiante para crear algo nuevo basado en su comprensión del tema.
+  "Estoy creando una aplicación que genera una serie de preguntas de evaluación para estudiantes de diferentes grados, como Primero de Primaria, Segundo de Primaria, etc. Cada nivel tiene su propio tema para generar las preguntas. Por favor, genera un conjunto de preguntas de evaluación para cada una de las siguientes categorías, con suficientes preguntas en cada una para analizar profundamente el entendimiento del estudiante del tema. Las preguntas que generes deben aumentar progresivamente en complejidad y profundidad de acuerdo al nivel de grado del estudiante y al tema. El grado del estudiante es " + vibe + " y el tema es " + bio + `.
+
+  Tu respuesta debe estar formateada utilizando elementos HTML para facilitar la lectura, incluyendo etiquetas de párrafo, saltos de línea, encabezados y títulos en negrita donde sea aplicable, no es necesario crear una página HTML completa que incluya elementos de cabeza y título.
+  
+  Las preguntas deben cubrir los siguientes puntos y debe haber suficientes preguntas en cada categoría para obtener una comprensión completa del conocimiento del estudiante:
+  
+  Preguntas de comprensión básica.
+  Proporciona varias preguntas que evalúen la comprensión básica del tema.
+  
+  Preguntas de aplicación.
+  Proporciona varias preguntas que evalúen la capacidad del estudiante para aplicar el conocimiento adquirido.
+  
+  Preguntas de análisis.
+  Proporciona varias preguntas que evalúen la capacidad del estudiante para analizar el tema en profundidad.
+  
+  Preguntas de evaluación.
+  Proporciona varias preguntas que evalúen la capacidad del estudiante para evaluar y tomar decisiones basadas en su conocimiento del tema.
+  
+  Preguntas de creación.
+  Proporciona varias preguntas que evalúen la capacidad del estudiante para crear algo nuevo basado en su comprensión del tema.
   `;
   
 
