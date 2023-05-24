@@ -4,23 +4,23 @@ export default function Footer() {
   return (
     <footer className="text-center h-16 sm:h-20 w-full sm:pt-2 pt-4 border-t mt-5 flex sm:flex-row flex-col justify-between items-center px-3 space-y-3 sm:mb-0 mb-3">
       <div>
-        Powered by{" "}
+        Created by Samasat Group for EMDI school, powered via{" "}
         <a
           href="https://samasat.com/"
           target="_blank"
           rel="noreferrer"
           className="font-bold hover:underline transition underline-offset-2"
         >
-          Samasat AI{" "}
+          Navi AI{" "}
         </a>
-        and{" "}
+        {" "}
         <a
           href="https://samasat.com/"
           target="_blank"
           rel="noreferrer"
           className="font-bold hover:underline transition underline-offset-2"
         >
-          Navi AI.
+        
         </a>
       </div>
       <div className="flex space-x-4 pb-4 sm:pb-0">
