@@ -15,9 +15,9 @@ class MyDocument extends Document {
             property="og:description"
             content="Lesson Planning Simplified."
           />
-          <meta property="og:title" content="MagicPlan" />
+          <meta property="og:title" content="navi-pregunta" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="MagicPlan" />
+          <meta name="twitter:title" content="navi-pregunta" />
           <meta
             name="twitter:description"
             content="Lesson Planning Simplified."
