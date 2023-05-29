@@ -29,26 +29,27 @@ const Home: NextPage = () => {
   }, [generatedBios]);
 
   const prompt =
-  "Estoy creando una aplicación que genera una serie de preguntas de evaluación para estudiantes de diferentes grados, como Primero de Primaria, Segundo de Primaria, etc. Cada nivel tiene su propio tema para generar las preguntas. Por favor, genera un conjunto de preguntas de evaluación para cada una de las siguientes categorías, con suficientes preguntas en cada una para analizar profundamente el entendimiento del estudiante del tema. Las preguntas que generes deben aumentar progresivamente en complejidad y profundidad de acuerdo al nivel de grado del estudiante y al tema. El grado del estudiante es " + vibe + " y el tema es " + bio + `.
+  "I'm creating an application that generates a series of evaluation questions for students of different grades, such as First Grade, Second Grade, etc. Each grade level has its own theme for generating the questions. Please generate a set of evaluation questions for each of the following categories, with enough questions in each one to deeply analyze the student's understanding of the topic. The questions you generate should progressively increase in complexity and depth according to the student's grade level and the topic. The student's grade level is "+ vibe + " and the topic is " + bio + `.
 
-  Tu respuesta debe estar formateada utilizando elementos HTML para facilitar la lectura, incluyendo etiquetas de párrafo, saltos de línea, encabezados y títulos en negrita donde sea aplicable, no es necesario crear una página HTML completa que incluya elementos de cabeza y título.
+  Your answer should be formatted using HTML elements to facilitate reading, including paragraph tags, line breaks, headers, and bold titles where applicable, it is not necessary to create a complete HTML page that includes head and title elements.
   
-  Las preguntas deben cubrir los siguientes puntos y debe haber suficientes preguntas en cada categoría para obtener una comprensión completa del conocimiento del estudiante:
+  The questions should cover the following points and there should be enough questions in each category to get a complete understanding of the student's knowledge:
   
-  Preguntas de comprensión básica.
-  Proporciona varias preguntas que evalúen la comprensión básica del tema.
+  Basic comprehension questions.
+  Provide several questions that evaluate the basic understanding of the topic.
   
-  Preguntas de aplicación.
-  Proporciona varias preguntas que evalúen la capacidad del estudiante para aplicar el conocimiento adquirido.
+  Application questions.
+  Provide several questions that evaluate the student's ability to apply the knowledge gained.
   
-  Preguntas de análisis.
-  Proporciona varias preguntas que evalúen la capacidad del estudiante para analizar el tema en profundidad.
+  Analysis questions.
+  Provide several questions that evaluate the student's ability to analyze the topic in depth.
   
-  Preguntas de evaluación.
-  Proporciona varias preguntas que evalúen la capacidad del estudiante para evaluar y tomar decisiones basadas en su conocimiento del tema.
+  Evaluation questions.
+  Provide several questions that evaluate the student's ability to evaluate and make decisions based on their knowledge of the topic.
   
-  Preguntas de creación.
-  Proporciona varias preguntas que evalúen la capacidad del estudiante para crear algo nuevo basado en su comprensión del tema.
+  Creation questions.
+  Provide several questions that evaluate the student's ability to create something new based on their understanding of the topic.
+  Consider that the creation questions are more like reinforcement activity proposals than questions
   `;
   
 
