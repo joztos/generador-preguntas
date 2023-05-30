@@ -13,7 +13,7 @@ import parse from "html-react-parser";
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [bio, setBio] = useState("");
-  const [vibe, setVibe] = useState<VibeType>("Primero de Primaria");
+  const [vibe, setVibe] = useState<VibeType>("First Grade");
   const [generatedBios, setGeneratedBios] = useState<string>("");
 
   const bioRef = useRef<null | HTMLDivElement>(null);
@@ -110,10 +110,10 @@ const Home: NextPage = () => {
           <p></p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
-          Evalua tu conocimiento con Navi AI
+        Evaluate your knowledge with Navi AI
         </h1>
         <p className="text-slate-500 mt-5">
-          1,118 evaluaciones generadas hasta ahora.
+        1,118 evaluations generated so far.
         </p>
         <div className="max-w-xl w-full">
           <div className="flex mt-10 items-center space-x-3">
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
               className="mb-5 sm:mb-0"
             />
             <p className="text-left font-medium">
-              Escribe el tema a evaluar.{" "}
+            Write the topic to evaluate.{" "}
               <span className="text-slate-500"></span>
             </p>
           </div>
@@ -134,12 +134,12 @@ const Home: NextPage = () => {
             onChange={(e) => setBio(e.target.value)}
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
-            placeholder={" por ejemplo. las celulas del cuerpo humano."}
+            placeholder={"For example, the cells of the human body"}
           />
           <div className="flex mb-5 items-center space-x-3">
             <Image src="/2-black.png" width={30} height={30} alt="1 icon" />
             <p className="text-left font-medium">
-              Selecciona el Grado Escolar.
+            Select the Grade Level.
             </p>
           </div>
           <div className="block">
@@ -151,7 +151,7 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
               onClick={(e) => generateBio(e)}
             >
-              Generar Planeación &rarr;
+              Generate Planning &rarr;
             </button>
           )}
           {loading && (
